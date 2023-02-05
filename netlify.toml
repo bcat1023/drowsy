@@ -1,0 +1,5 @@
+#[[redirects]]
+#  from = "/*"
+#  to = "/offline"
+#  status = 503
+#  force = true
