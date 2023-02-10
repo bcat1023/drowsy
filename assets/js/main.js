@@ -423,6 +423,6 @@ document.getElementById("discordcopy").addEventListener("click", copydiscord);
 
 function redirect(url, name) {
 	document.getElementById('external-link').href = url;
-	document.getElementById('redirect-name').innerHTML = 'We want to redirect you to ' + name + ', we are not affiliated with ' + name;
+	document.getElementById('redirect-name').innerHTML = 'You are leaving thedrowsy.com and going to ' + name;
 	console.log(url + name)
 }
