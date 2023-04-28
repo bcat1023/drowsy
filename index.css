@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@200&display=swap');
+
+:root {
+  --side-margins: 15px;
+}
+
+body {
+  margin: 0px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 20vw;
+  height: 100vh;
+  background: #7d7e7d;
+  background: #7d7e7d;
+  background: -moz-linear-gradient(45deg, #7d7e7d 0%, #0e0e0e 100%);
+  background: -webkit-linear-gradient(45deg, #7d7e7d 0%, #0e0e0e 100%);
+  background: linear-gradient(45deg, #7d7e7d 0%, #0e0e0e 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7d7e7d', endColorstr='#0e0e0e', GradientType=1);
+  margin-top: auto;
+}
+
+li a {
+  margin: auto;
+  display: block;
+  padding: 8px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+.limange {
+  margin-top: 5vh;
+}
+
+.navbarli {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20vw;
+}
+
+.home {
+  transition: 1s;
+  height: 6vh;
+  height: 6vh;
+  padding: 12px;
+  background: rgb(19, 19, 19);
+  background: -moz-radial-gradient(center, ellipse cover, rgba(19, 19, 19, 1) 0%, rgba(28, 28, 28, 1) 9%, rgba(43, 43, 43, 1) 24%, rgba(17, 17, 17, 1) 40%, rgba(0, 0, 0, 1) 49%, rgba(44, 44, 44, 1) 50%, rgba(71, 71, 71, 1) 61%, rgba(102, 102, 102, 1) 75%, rgba(89, 89, 89, 1) 88%, rgba(76, 76, 76, 1) 100%);
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(19, 19, 19, 1) 0%, rgba(28, 28, 28, 1) 9%, rgba(43, 43, 43, 1) 24%, rgba(17, 17, 17, 1) 40%, rgba(0, 0, 0, 1) 49%, rgba(44, 44, 44, 1) 50%, rgba(71, 71, 71, 1) 61%, rgba(102, 102, 102, 1) 75%, rgba(89, 89, 89, 1) 88%, rgba(76, 76, 76, 1) 100%);
+  background: radial-gradient(ellipse at center, rgba(19, 19, 19, 1) 0%, rgba(28, 28, 28, 1) 9%, rgba(43, 43, 43, 1) 24%, rgba(17, 17, 17, 1) 40%, rgba(0, 0, 0, 1) 49%, rgba(44, 44, 44, 1) 50%, rgba(71, 71, 71, 1) 61%, rgba(102, 102, 102, 1) 75%, rgba(89, 89, 89, 1) 88%, rgba(76, 76, 76, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#131313', endColorstr='#4c4c4c', GradientType=1);
+  border-radius: 50px;
+}
+
+.home:hover {
+  transition: 1s;
+  padding: 20px;
+}
+
+.frame {
+  position: fixed;
+  top: 0;
+  margin-left: 20vw;
+  width: 80vw;
+  height: 100vh;
+  z-index: 55;
+  background-color: black;
+  color: white;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.slide {
+  width: 80vw;
+  height: 100vh;
+}
+
+.drowsygames {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  background-image: url('/assets/img/back.webp');
+}
+
+.bio {
+  font-family: 'Instrument Serif', serif;
+}
+
+.work {
+  font-family: 'Source Serif Pro', serif;
+}
+
+.workparent {
+  margin-left: var(--side-margins);
+  margin-right: var(--side-margins);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.div1 {
+  grid-area: 1 / 1 / 2 / 2;
+  background-image: url('/assets/img/back.webp');
+  background-size: contain;
+}
+
+.div2 {
+  grid-area: 1 / 2 / 2 / 3;
+  background-color: blue;
+}
+
+.div3 {
+  grid-area: 1 / 3 / 2 / 4;
+  background-color: blue;
+}
+
+.div4 {
+  grid-area: 2 / 1 / 3 / 2;
+  background-color: blue;
+}
+
+.div5 {
+  grid-area: 2 / 2 / 3 / 3;
+  background-color: blue;
+}
+
+.div6 {
+  grid-area: 2 / 3 / 3 / 4;
+  background-color: blue;
+}
+
+.div7 {
+  grid-area: 3 / 1 / 4 / 2;
+  background-color: blue;
+}
+
+.div8 {
+  grid-area: 3 / 2 / 4 / 3;
+  background-color: blue;
+}
+
+.div9 {
+  grid-area: 3 / 3 / 4 / 4;
+  background-color: blue;
+}
+
+.biopar {
+  font-family: 'Open Sans', sans-serif;
+  transform: scale(0.9);
+  font-weight: 100;
+  padding-right: var(--side-margins);
+  padding-left: var(--side-margins);
+}
+
+.slidetopper {
+  margin: 0px;
+  padding: 75px;
+  text-align: center;
+}
+
+.activeTitanButton {
+  border: none;
+  background: rgb(121, 9, 9);
+  color: white;
+  padding: 1vw;
+  font-weight: 50;
+  border-radius: 50px;
+  transition: 0.5s;
+}
+
+.activeButton {
+  border: solid white;
+  text-align: center;
+  font-weight: bold;
+  background-color: transparent;
+  border-radius: 50px;
+  transition: 0.5s;
+}
+
+.title {
+  font-weight: thin;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+
+.griddesc {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.activeButton:hover {
+  transition: 0.5s;
+  transform: scale(1.1);
+  font-weight: bold;
+}
+
+.activeGridButton {
+  border: solid white;
+  text-align: center;
+  font-weight: bold;
+  background-color: transparent;
+  border-radius: 0xp;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+
+.activeGridButton:hover {
+  transition: 0.5s;
+  border: solid white;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+}
+
+.activeTitanButton:hover {
+  transition: 0.5s;
+  transform: scale(1.1);
+  font-weight: bold;
+}
