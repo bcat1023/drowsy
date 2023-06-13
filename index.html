@@ -11,8 +11,7 @@
 		<link href='/assets/css/noscript.css' rel='stylesheet' />
 		<h1>This site requires JS, Please enable JavaScript. If you don't know how to ask a friend or Google it</h1>
 	</noscript>
-	<meta name="description"
-		content="Hi im Drowsy, welcome to my online portfolio.">
+	<meta name="description" content="Hi im Drowsy, welcome to my online portfolio.">
 </head>
 
 <body class="is-preload">
@@ -34,14 +33,16 @@
 					</p>
 				</div>
 			</div>
-			<p>Please note some of the information might be outdated, I am working to update the information and I thank you for your patience.</p>
+			<p>Please note some of the information might be outdated, I am working to update the information and I thank
+				you for your patience.</p>
 			<!-- <img src="https://dcbadge.vercel.app/api/shield/717523777432584202?style=flat&theme=discord-inverted" -->
-				<!-- width="215" height="28px" alt="Discord online/offline"> -->
+			<!-- width="215" height="28px" alt="Discord online/offline"> -->
 			<nav>
 				<ul>
 					<li><a style="font-weight: bold;" href="#intro">Intro</a></li>
 					<li><a style="font-weight: bold;" href="#projects">Projects</a></li>
 					<li><a style="font-weight: bold;" href="#science">Titan Network</a></li>
+					<li><a style="font-weight: bold;" href="#live">Radio/Live Shows</a></li>
 					<li><a style="font-weight: bold;" href="#contact">Contact</a></li>
 				</ul>
 			</nav>
@@ -111,6 +112,20 @@
 				</ul>
 			</article>
 
+			<article id="live">
+				<h2>Live Radio Sets</h2>
+				<p style="font-weight: bold;">I do random radio shows sometimes, these shows are typically hour long
+					music shows.</p>
+				<script type='text/javascript'>
+					var cstrFreePlayerUid = 577587; var cstrFreePlayerTheme = 'purple'; var cstrFreePlayerColor = '';
+				</script>
+				<script type='text/javascript' src='//corscdn.caster.fm/freeplayer/FreePlanPlayerEmbed.js'></script>
+				<!--   DO NOT REMOVE THE LINKS BELOW, THEY  WILL BE HIDDEN (AND WILL HELP US A LOT)   -->
+				<a id='cstrFreePlayerBL1' href='//www.caster.fm/'>Free Shoutcast Hosting</a><a id='cstrFreePlayerBL2'
+					href='//www.caster.fm/'>Radio Stream Hosting</a>
+				<div id='cstrFreePlayerDiv'></div>
+			</article>
+
 			<!-- Coming soon -->
 			<article id="cs">
 				<h2>Dew</h2>
@@ -157,29 +172,7 @@
 				</ul>
 			</article>
 
-			<!-- Discord -->
-			<article id="discord">
-				<form method="post" action="#">
-					<div class="fields">
-						<div class="field half">
-							<label for="name">Discord username</label>
-							<input type="text" value="drowsy#6676" readonly id="discorduser" />
-						</div>
-					</div>
-					<img src="https://dcbadge.vercel.app/api/shield/717523777432584202?theme=discord-inverted"
-						alt="Discord Online/Offline">
-					<br><br>
-					<ul class="actions">
-						<li><input type="button" value="Copy" id="discordcopy" class="primary" /></li>
-						<a href="#contact" style="border-bottom: none;">
-							<li id="discordback" style="opacity: 0;transition: .2s;"><input type="button" value="Back"
-									class="primary" /></li>
-						</a>
-					</ul>
-				</form>
-			</article>
-
-<!-- Success -->
+			<!-- Success -->
 			<article id="done">
 				<h1>Message Received</h1>
 				<h3>Thank you, I will respond to your message as soon as I can</h3>
@@ -188,7 +181,8 @@
 			<!-- Contact -->
 			<article id="contact">
 				<h2 class="major">Contact</h2>
-				<form action='/#done' data-netlify-recaptcha="true" method='post'><input type='hidden' name='form-name' value='form 1' />
+				<form action='/#done' data-netlify-recaptcha="true" method='post'><input type='hidden' name='form-name'
+						value='form 1' />
 					<div class="fields">
 						<div class="field half">
 							<label for="name" style="font-weight: bold;">Name</label>
@@ -202,19 +196,21 @@
 							<label for="message" style="font-weight: bold;">Message</label>
 							<textarea name="message" id="message" rows="4"></textarea>
 						</div><br>
-					<center><div data-netlify-recaptcha="true"></div></center><!-- ToDo: Replace Center Tag with a proper class -->
-					<br>
-					<ul class="actions">
-						<li><input type="submit" value="Send Message" class="primary" /></li>
-						<li><input type="reset" style="font-weight: bold;" value="Reset" /></li>
-					</ul>
-				<ul class="icons">
-					<li><a href="#discord" class="icon brands fa-discord"><span class="label">Discord</span></a></li>
-					<li><a href="#external" onclick="redirect('https://github.com/bcat1023', 'GitHub')" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-				</ul>
+						<center>
+							<div data-netlify-recaptcha="true"></div>
+						</center><!-- ToDo: Replace Center Tag with a proper class -->
+						<br>
+						<ul class="actions">
+							<li><input type="submit" value="Send Message" class="primary" /></li>
+							<li><input type="reset" style="font-weight: bold;" value="Reset" /></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="#external" onclick="redirect('https://github.com/bcat1023', 'GitHub')"
+									class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
 				</form>
 			</article>
-</div>
+		</div>
 		<!-- Footer -->
 		<footer id="footer">
 			<p class="copyright">&copy; 2023</p>
