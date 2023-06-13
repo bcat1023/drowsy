@@ -37,13 +37,25 @@ form {
 
 .actions {
     display: inline;
+    marign-left: -40px;
 }
 
 .button {
-    height: 76px;
-    border: 1px solid #d3d3d3;
-    background-color: #f9f9f9;
-    border-radius: 3px;
-    padding-left: 20px;
-    padding-right: 20px;
+    height: 48px;
+    border: none;
+    -webkit-backdrop-filter: blur(45px);
+    box-shadow: 0 0 15px -3px rgba(64, 64, 64, 0.75);
+    color: black;
+    font-family: var(--second-font);
+    background-color: transparent;
+    border-radius: 7px;
+    width: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: 0.15s;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
 }

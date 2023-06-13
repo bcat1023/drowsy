@@ -1,16 +1,3 @@
-
-function slider(selection, url) {
-    document.getElementById('slider').style.left = 0;
-    try {
-        document.getElementById('text').innerText = selection;
-        document.getElementById('subtext').innerText = 'Please Wait...';
-        window.location = url
-    } catch {
-        document.getElementById('text').innerText = 'Error 1';
-        document.getElementById('subtext').innerText = 'Please refresh your page';
-    }
-}
-
 function tab(selection) {
     if(selection == 'home') {
         try{
@@ -72,9 +59,15 @@ function tab(selection) {
             return alert('Error 5')
         }
     }
+    document.getElementById('progress-bar').style.display = 'block';
+}
+
+function radio() {
+    document.getElementById('radio').classList.toggle("radioon");document.getElementById('radioin').classList.toggle("activebutton")
 }
 
 function deblur() {
     document.getElementById('stall').style.backdropFilter = 'blur(0px)'
     document.getElementById('stall').style.webkitBackdropFilter = 'blur(0px)'
+    document.getElementById('progress-bar').style.display = 'none';
 }

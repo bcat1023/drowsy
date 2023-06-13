@@ -1,32 +1,44 @@
 <html>
-    <head>
-        <title>thedrowsy.com work in progress</title>
-        <link rel="stylesheet" href="/index.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&family=Wix+Madefor+Display&display=swap" rel="stylesheet">
-    <body>
-        <div class="slider" id="slider">
-            <div class="sliderbox">
-                <h1 class="slidertext" id="text">An critical error has occurred</h1> 
-                <h2 class="slidertext" id="subtext">Please reload</h2>
-            </div>
-        </div>
-        <header>
-            <div class="headerdiv"><ul>
+
+<head>
+    <title>thedrowsy.com work in progress</title>
+    <link rel="stylesheet" href="/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&family=Wix+Madefor+Display&display=swap"
+        rel="stylesheet">
+
+<body>
+    <div class="indeterminate-progress-bar" id="progress-bar">
+        <div class="indeterminate-progress-bar__progress"></div>
+    </div>
+    <header>
+        <div class="headerdiv">
+            <ul>
                 <li id="home"><a class="lia" href="#home" onclick="tab('home')">Home</a></li>
-                <li id="tn"><a class="lia" href="//games.thedrowsy.com" onclick="slider('Titan Network', 'https://games.thedrowsy.com')">Titan Network</a></li>
+                <li id="tn"><a class="lia" href="//games.thedrowsy.com" target="_blank">Titan Network</a></li>
                 <li id="projects"><a class="lia" href="#projects" onclick="tab('projects')">Projects/Works</a></li>
+                <li id="projects"><a class="lia" id="radioin" href="#projects" onclick="radio()">Live</a></li>
                 <li id="bio"><a class="lia" href="#bio" onclick="tab('bio')">About Me</a></li>
                 <li id="contact"><a class="lia" href="#contact" onclick="tab('contact')">Contact Me</a></li>
-            </ul></div>
-            <div class="blurstaller" id="stall"></div>
-        </header>
-        <div>
-            <iframe onload="deblur()" src="/home.html" id="tabframe" frameborder="0"></iframe>
+            </ul>
         </div>
-    </body>
-    <script src="/index.js"></script>
-    <script src="/launch.js"></script>
+        <div class="blurstaller" id="stall"></div>
+    </header>
+    <div id="radio" class="radio">
+        <script
+            type="text/javascript">var cstrFreePlayerUid = 577587; var cstrFreePlayerTheme = "purple"; var cstrFreePlayerColor = "";</script>
+        <script type="text/javascript" src="//corscdn.caster.fm/freeplayer/FreePlanPlayerEmbed.js"></script>
+        <a id="cstrFreePlayerBL1" href="//www.caster.fm/">Free Shoutcast Hosting</a><a id="cstrFreePlayerBL2"
+            href="//www.caster.fm/">Radio Stream Hosting</a>
+        <div id="cstrFreePlayerDiv"></div>
+    </div>
+    <div>
+        <iframe class="iframe" onload="deblur()" src="/home.html" id="tabframe" frameborder="0"></iframe>
+    </div>
+</body>
+<script src="/index.js"></script>
+<script src="/launch.js"></script>
+
 </html>

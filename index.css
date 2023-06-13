@@ -7,6 +7,7 @@ body {
     margin: 0;
     background-attachment: fixed;
     font-family: 'Wix Madefor Display', sans-serif;
+    overflow: hidden;
 }
 
 .slider {
@@ -21,7 +22,7 @@ body {
 }
 
 
-iframe {
+.iframe {
     width: 100vw;
     height: 100vh;
 }
@@ -64,6 +65,10 @@ ul {
     overflow: hidden;
 }
 
+.activebutton {
+    text-decoration: underline;
+}
+
 .headerdiv {
     padding: 3px;
     box-shadow: 0 0 1rem 0 rgba(239, 218, 218, 0.443);
@@ -93,6 +98,47 @@ ul {
     text-align: center;
     color: black;
     font-family: 'Prompt', sans-serif;
+}
+
+.indeterminate-progress-bar {
+    height: 0.2rem;
+    position: fixed;
+    z-index: 99;
+    width: 100vw;
+    display: none;
+}
+
+.indeterminate-progress-bar__progress {
+    background-color: #3b82f6;
+    border-radius: 9999px;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    width: 50%;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: indeterminate-progress-bar;
+}
+
+@keyframes indeterminate-progress-bar {
+    from {
+        left: -50%;
+    }
+    to {
+        left: 100%;
+    }
+}
+
+.radio {
+    position: fixed;
+    width: 0vw;
+    max-width: 50vw !important;
+    bottom: 0px;
+    transition:  .3s;
+}
+
+.radioon {
+    width: 50vw;
 }
 
 .footer {
