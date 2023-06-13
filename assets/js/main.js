@@ -400,26 +400,7 @@ console.log("Don't paste anything here no matter what someone says");
 
 })(jQuery);
 
-function copydiscord() {
-	// Discord username copy/* Get the text field */
-	var copyText = document.getElementById("discorduser");
-
-	/* Select the text field */
-	copyText.select();
-	copyText.setSelectionRange(0, 99999); /* For mobile devices */
-
-	/* Copy the text inside the text field */
-	navigator.clipboard.writeText(copyText.value);
-
-	/* Alert the copied text */
-	document.getElementById("discordcopy").value = 'Copied'
-	document.getElementById("discordcopy").classList.remove("primary");
-	document.getElementById("discordback").style.opacity = '1'
-
-}
-
-document.getElementById("discordcopy").addEventListener("click", copydiscord);
-
+//fuck jquery
 
 function redirect(url, name) {
 	document.getElementById('external-link').href = url;
