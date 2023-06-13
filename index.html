@@ -1,68 +1,32 @@
-<!DOCTYPE html>
 <html>
-
-<head>
-    <title>Welcome to the drowsy.com</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" src="/index.css" href="/index.css">
-</head>
-
-<body>
-    <noscript>Please enable JavaScript for this site</noscript>
-<ul>
-    <li><a class="limange" href="javascript:void" onclick="moveto('#home')"><img class="home" src="/assets/img/GV1EmQDq_4x.webp" alt="Home page logo"></a></li>
-    <div class="navbarli"><li><a href="#home">Home</a></li>
-    <li><a href="#games">Games</a></li>
-    <li><a href="#bio">About me</a></li>
-    <li><a href="#works">My Work</a></li>
-    <li><a href="#intro">Contact</a></li></div>
-</ul>
-<div class="frame">
-    <div id="home" class="slide">
-        <iframe src="/background.html" class="slide" frameborder="0"></iframe>
-    </div>
-    <div class="slide drowsygames">
-        <div id="games"></div>
-        <h1 class="slidetopper">Titan Network</h1>
-        <h2 style="font-weight: 100; padding-left: 15px;padding-right: 15px;">Titan Network, the trusted choice for web games and anything you can't do on a chromebook</h2>
-        <a href="//games.thedrowsy.com"><button class="activeTitanButton"><h2>Open Titan Network</h2></button></a>
-    </div>
-    <div id="bio" class="slide bio">
-        <div id="games"></div>
-        <h1 class="slidetopper">About Me</h1>
-        <h3 class="biopar">Hey there, I'm drowsy. I was born in 2008; my dad liked computers and he would do all sorts of things. I watched him and wanted to do what he did, and from there my love for computers grew. Not too long later I started coding and messing around with computers. My first line of code written was actually on a old computer I got from EcoThrift, It ran windowsXP and had a website stored on it called VAIO Support. It was intended for people to get access to support, however instead of using it I modified it and changed the text to other things. From there I googled html tutorial and found a website called w3schools, I followed and read the whole tutorial and made my first website. Years later here I am working on big projects like Titan Network.</h3>
-    </div>
-    <div id="works" class="slide work">
-        <div id="games"></div>
-        <h1 class="slidetopper">My Work</h1>
-        <div class="workparent"> 
-            <div class="div1"> 
-                <div class="title"><h1>Titan Network</h1></div>
-                <div class="griddesc"><h2 class="griddesc">Desc here</h2></div>
-                <div class="activeGridButton">Open</div>
-            </div> 
-            <div class="div2">
-                <div class="title"><h1>thedrowsy.com</h1></div>
-                <div class="griddesc"><h2 class="griddesc">Your looking at it</h2></div>
-                <div class="activeGridButton">Open</div>
-            </div> 
-            <div class="div3"> </div> 
-            <div class="div4"> </div> 
-            <div class="div5"> </div> 
-            <div class="div6"> </div> 
-            <div class="div7"> </div> 
-            <div class="div8"> </div> 
-            <div class="div9"> </div> 
+    <head>
+        <title>thedrowsy.com work in progress</title>
+        <link rel="stylesheet" href="/index.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&family=Wix+Madefor+Display&display=swap" rel="stylesheet">
+    <body>
+        <div class="slider" id="slider">
+            <div class="sliderbox">
+                <h1 class="slidertext" id="text">An critical error has occurred</h1> 
+                <h2 class="slidertext" id="subtext">Please reload</h2>
             </div>
-    </div>
-</div>
-</body>
-<script>
-    function moveto(place) {
-        var element = document.querySelector(place);
-        element.scrollIntoView();
-    }
-</script>
+        </div>
+        <header>
+            <div class="headerdiv"><ul>
+                <li id="home"><a class="lia" href="#home" onclick="tab('home')">Home</a></li>
+                <li id="tn"><a class="lia" href="//games.thedrowsy.com" onclick="slider('Titan Network', 'https://games.thedrowsy.com')">Titan Network</a></li>
+                <li id="projects"><a class="lia" href="#projects" onclick="tab('projects')">Projects/Works</a></li>
+                <li id="bio"><a class="lia" href="#bio" onclick="tab('bio')">About Me</a></li>
+                <li id="contact"><a class="lia" href="#contact" onclick="tab('contact')">Contact Me</a></li>
+            </ul></div>
+            <div class="blurstaller" id="stall"></div>
+        </header>
+        <div>
+            <iframe onload="deblur()" src="/home.html" id="tabframe" frameborder="0"></iframe>
+        </div>
+    </body>
+    <script src="/index.js"></script>
+    <script src="/launch.js"></script>
 </html>

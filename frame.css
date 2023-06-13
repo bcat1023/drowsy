@@ -1,0 +1,72 @@
+:root {
+    --main-font:'Wix Madefor Display', sans-serif;
+    --second-font: 'Prompt', sans-serif;
+
+    --font-color: black;
+    --second-font-color: white;
+}
+
+body {
+    margin: 0;
+    background-attachment: fixed;
+    font-family: var(--main-font);
+}
+
+.homeslide {
+    text-align: center;
+    color: var(--font-color);
+    font-family: var(--second-font);
+    z-index: 15;
+}
+
+.content {
+    margin-top: 18vh;
+}
+
+.activeButton {
+    border: 2px transparent solid;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: black;
+    padding-left: 15px;
+    padding-right: 15px;
+    transition: 0.5s;
+    color: var(--second-font-color);
+}
+
+.activeButton:hover {
+    transition: 0.5s;
+    transform: scale(1.2);
+}
+
+.passiveButton {
+    border: 2px black solid;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: transparent;
+    padding-left: 15px;
+    padding-right: 15px;
+    transition: 0.5s;
+}
+
+.passiveButton:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
+    border: 2px transparent solid;
+    background-color: black;
+    color: var(--second-font-color);
+}
+
+.title {
+    text-align: center;
+    font-family: var(--main-font);
+}
+
+.bg {
+    position: fixed;
+    width: 100vw;
+    height: 190vh;
+    display: flex;
+    top: 0;
+    z-index: -5;
+}

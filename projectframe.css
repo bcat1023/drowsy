@@ -1,0 +1,55 @@
+.slider {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    left: -100vw;
+    transition: .2s;
+    z-index: 1;
+    top: 0;
+}
+
+.content {
+    display: block;
+}
+
+.sliderbox {
+    position: fixed;
+    margin-top: 45vh;
+    width: 100vw;
+}
+
+.slidertext {
+    color: white;
+    text-align: center;
+}
+
+.mac {
+    height: 60vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+.trans {
+    transition: 0.5s;
+}
+
+.presentation {
+    z-index: 9;
+    display: block;
+    transition: 2s;
+}
+
+.pbio {
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+ul li {
+    display: inline;
+    z-index: 9;
+}
