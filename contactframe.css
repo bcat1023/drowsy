@@ -41,9 +41,9 @@ form {
     border: none;
     -webkit-backdrop-filter: blur(45px);
     box-shadow: 0 0 15px -3px rgba(64, 64, 64, 0.75);
-    color: black;
-    font-family: var(--second-font);
-    background-color: transparent;
+    background-color: black;
+    color: white;
+    font-family: var(--main-font);
     border-radius: 7px;
     width: 100px;
     margin-left: 10px;

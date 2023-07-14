@@ -1,8 +1,10 @@
+@import url('/assets/fonts/Josefin\ Slab\ Semi\ Bold\ Italic.ttf');
+@import url('/assets/fonts/Reem\ Kufi\ Regular.ttf');
 :root {
     --main-font: 'Reem Kufi', sans-serif;
-    --second-font: var(--main-font);
+    --second-font: 'Josefin Slab', serif;
 
-    --font-color: rgb(233, 66, 55);
+    --font-color: white;
     --second-font-color: white;
 }
 
@@ -12,10 +14,14 @@ body {
     font-family: var(--main-font);
 }
 
+h1, h2 {
+    font-weight: lighter;
+}
+
 .homeslide {
     text-align: center;
     color: var(--font-color);
-    font-family: var(--second-font);
+    font-family: var(--main-font);
     z-index: 15;
 }
 

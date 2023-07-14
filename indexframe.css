@@ -15,11 +15,14 @@ body {
 
 .frontPageText {
     text-decoration: none;
-    color: var(--font-color);
+    font-family: var(--second-font);
+    color: white;
+    font-style: italic;
+    font-variant-caps: unicase;
 }
 
 .frontPageLogo {
-    height: 40vh;
+    height: 20vh;
 }
 
 .homeslide {
@@ -51,4 +54,12 @@ body {
     background-color: rgba(255, 255, 255, .15);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
+}
+
+.feed {
+    color: white;
+    bottom: 15vh;
+    width: 100vw;
+    position: fixed;
+    text-align: center;
 }

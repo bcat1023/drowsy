@@ -42,14 +42,14 @@ body {
 li {
     list-style: none;
     text-decoration: none;
-    color: white;
+    color: #b25a38;
     filter: blur(0px);
     display: inline;
 }
 
 .lia {
     text-decoration: none;
-    color: black;
+    color: white;
     padding-left: 1vw;
     padding-right: 1vw;
     transition: 0.5s;
