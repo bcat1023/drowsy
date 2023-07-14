@@ -17,6 +17,8 @@ const addResourcesToCache = async (resources) => {
         "/projectsframe.css",
         "/contactframe.css",
         "/contactframe.css",
+        "https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js",
+        "https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js",
       ])
     );
   });

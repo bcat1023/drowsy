@@ -1,12 +1,13 @@
 :root {
     --header-link-color: black;
-    --gradient: -webkit-repeating-linear-gradient(360deg, red, green, blue) 0 0 / 100% 100%;;
+    --gradient: -webkit-repeating-linear-gradient(360deg, red, green, blue) 0 0 / 100% 100%;
 }
 
 body {
     margin: 0;
     background-attachment: fixed;
     font-family: 'Wix Madefor Display', sans-serif;
+    background-color: rgb(36, 23, 60);
     overflow: hidden;
 }
 

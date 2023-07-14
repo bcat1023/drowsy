@@ -1,7 +1,9 @@
 body {
     margin: 0;
     background-attachment: fixed;
+    background-color: rgb(36, 23, 60);
     font-family: 'Wix Madefor Display', sans-serif;
+    color: var(--primary-text);
 }
 
 .content {
@@ -11,12 +13,20 @@ body {
     font-family: 'Prompt', sans-serif;
 }
 
+.frontPageText {
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+.frontPageLogo {
+    height: 40vh;
+}
+
 .homeslide {
     text-align: center;
     color: white;
     font-family: 'Prompt', sans-serif;
-    z-index: 99999;
-    font-style: italic;
+    z-index: 99999;;
 }
 
 .footer {

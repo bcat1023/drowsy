@@ -1,8 +1,8 @@
 :root {
-    --main-font:'Wix Madefor Display', sans-serif;
-    --second-font: 'Prompt', sans-serif;
+    --main-font: 'Reem Kufi', sans-serif;
+    --second-font: var(--main-font);
 
-    --font-color: black;
+    --font-color: rgb(233, 66, 55);
     --second-font-color: white;
 }
 
