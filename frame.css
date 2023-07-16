@@ -50,6 +50,7 @@ h1, h2 {
     padding: 10px;
     border-radius: 5px;
     background-color: transparent;
+    color: white;
     padding-left: 15px;
     padding-right: 15px;
     transition: 0.5s;
@@ -70,9 +71,9 @@ h1, h2 {
 
 .bg {
     position: fixed;
+    background: linear-gradient(to top,rgba(19,21,25,.5),rgba(19,21,25,.5)),url(/be5d3b5b6ed00f1cb56735a8c1014582c2125cb4/232b9/images/overlay.webp);
+    top: 0px;
+    height: 150vh;
     width: 100vw;
-    height: 190vh;
-    display: flex;
-    top: 0;
-    z-index: -5;
+    z-index: 1;
 }
