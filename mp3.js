@@ -6,7 +6,7 @@
 
 const audioPlayer = document.querySelector(".audio-player");
 const audio = new Audio(
-  "/last-stream.mp3"
+  "https://thedrowsy.com/last-stream.mp3"
 );
 
 console.dir(audio);
