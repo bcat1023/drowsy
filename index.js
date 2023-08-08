@@ -29,6 +29,21 @@ function tab(selection) {
             return alert('Error 3')
         }
     }
+    if(selection == 'research') {
+        try{
+            try {
+                document.getElementById('tabframe').src = '/research.html'
+                document.getElementById('stall').style.backdropFilter = 'blur(20px)'
+                document.getElementById('stall').style.webkitBackdropFilter = 'blur(20px)'
+            } catch {
+                console.log('Error 22')
+                return alert('Error 22')
+            }
+        } catch {
+            console.log('Failed to load tab: rs')
+            return alert('Failed to load tab: rs')
+        }
+    }
     if(selection == 'bio') {
         try{
             try {
@@ -53,6 +68,21 @@ function tab(selection) {
             } catch {
                 console.log('Error 24')
                 return alert('Error 24')
+            }
+        } catch {
+            console.log('Error 5')
+            return alert('Error 5')
+        }
+    }
+    if(selection == 'tn') {
+        try{
+            try {
+                document.getElementById('tabframe').src = '/tt.html'
+                document.getElementById('stall').style.backdropFilter = 'blur(20px)'
+                document.getElementById('stall').style.webkitBackdropFilter = 'blur(20px)'
+            } catch {
+                console.log(console.error())
+                return alert('Failed to open TN tab')
             }
         } catch {
             console.log('Error 5')

@@ -1,0 +1,29 @@
+.article {
+    background-color: white;
+    color: black;
+    margin-left: 1in;
+    margin-right: 1in;
+    padding: 60px;
+    text-align: left;
+    font-family: "Times New Roman", Times, serif;
+    letter-spacing: 1;
+    line-height: 2;
+    font-size: 20px;
+    margin-bottom: 10vw;
+    border-radius: 5px 5px 15px 15px;
+}
+
+.humanline {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.tab {
+    margin-left: 40px;
+}
+
+a {
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+}

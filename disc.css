@@ -1,0 +1,39 @@
+.homeslide {
+    height: 100vh;
+}
+.holder {
+    height: 100vh;
+}
+img {
+    width: 50px;
+    float: left;
+}
+.listing {
+    text-decoration: none;
+}
+.text {
+    float: left;
+    height: 59px;
+    margin-top: 33px;
+    margin-left: 30px;
+    text-decoration: none;
+    color: black;
+    font-family: var(--main-font);
+    font-weight:normal;
+}
+li {
+    display: inline;
+}
+
+ul {
+    display: inline;
+    text-align: center;
+}
+.card {
+    background: whitesmoke;
+    width: 80vw;
+    margin: auto;
+    height: 89px;
+    border-radius: 10px;
+    overflow: hidden;
+}
