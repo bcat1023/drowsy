@@ -24,8 +24,11 @@
 		<header id="header">
 			<div class="logo"
 				style="overflow: hidden;background-color: #000000;">
-				<img src="/images/logo.webp" class="icon" alt="profile picture" style="width: 4.5rem;
-							margin-top: 8px;">
+				<picture>
+					<source srcset="/images/logo.webp" type="image/webp">
+					<source srcset="/images/fallback/logo.jpg" type="image/jpeg">
+					<img src="/images/logo.webp" class="icon" alt="profile picture" style="width: 4.5rem; =margin-top: 8px;">
+				  </picture>
 			</div>
 			<div class="content">
 				<div class="inner">
@@ -56,7 +59,12 @@
 			<!-- Intro -->
 			<article id="intro">
 				<h2 class="major">Intro</h2>
-				<span class="image main"><img src="/images/pic01.webp" loading="lazy" alt="" /></span>
+				<span class="image main">
+					<picture>
+						<source srcset="/images/pic01.webp" type="image/webp">
+						<source srcset="/images/fallback/pic01.jpg" type="image/jpeg">
+						<img src="/images/pic01.webp" loading="lazy" alt="" /></span>
+					</picture>
 				<p style="font-weight: bold;">Hey there, I'm drowsy. I was born in 2008; my dad liked computers and he
 					would do all
 					sorts of things. I watched him and wanted to do what he did, and from there my love for computers
@@ -154,7 +162,12 @@
 			<!-- Games -->
 			<article id="science">
 				<h2 class="major">Games</h2>
-				<span class="image main"><img src="/images/back.webp" alt="" /></span>
+				<span class="image main">
+					<picture>
+						<source srcset="/images/back.webp" type="image/webp">
+						<source srcset="/images/fallback/back.gif" type="image/gif">
+						<img src="/images/back.webp" alt="" /></span>
+					</picture>
 				<h3 style="text-align: center;">Titan Network is a platform built to be used at school, it has games,
 					website unblocking, and more to come!</h3>
 				<ul style="display: table;margin-left: auto;margin-right: auto;" class="actions">

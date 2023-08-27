@@ -758,7 +758,7 @@ input[type="radio"]+label:before {
 
 .image:before {
 	pointer-events: none;
-	background-image: url("../../images/overlay.webp");
+	background-image: url("../../images/overlay.webp"),url("../../images/fallback/overlay.jpg");
 	background-color: rgba(19, 21, 25, 0.5);
 	border-radius: 4px;
 	content: '';
@@ -1274,7 +1274,7 @@ button {
 	-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
 	-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
 	transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-	background-image: url("../../images/bg.webp");
+	background-image: url("../../images/bg.webp"),url("../../images/fallback/bg.jpg");
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
