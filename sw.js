@@ -1,27 +1,28 @@
-const addResourcesToCache = async (resources) => {
-    const cache = await caches.open("v1");
-    await cache.addAll(resources);
-  };
-  
-  self.addEventListener("install", (event) => {
-    event.waitUntil(
-      addResourcesToCache([
-        "/",
-        "/index.html",
-        "/indexframe.css",
-        "/bio.html",
-        "/bioframe.css",
-        "/home.html",
-        "/indexframe.css",
-        "/projects.html",
-        "/projectsframe.css",
-        "/contactframe.css",
-        "/contactframe.css",
-        "https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js",
-        "https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js",
-        "/assets/images/MBP\ BTOS.png",
-        "/assets/images/MBP\ TN.png"
-      ])
-    );
-  });
-  
+// Establish a cache name
+const cacheName = 'TheDrowsy_Cache_V1';
+
+self.addEventListener('fetch', (event) => {
+  // Check if this is a request for an image
+  if (event.request.destination === 'image') {
+    event.respondWith(caches.open(cacheName).then((cache) => {
+      // Go to the cache first
+      return cache.match(event.request.url).then((cachedResponse) => {
+        // Return a cached response if we have one
+        if (cachedResponse) {
+          return cachedResponse;
+        }
+
+        // Otherwise, hit the network
+        return fetch(event.request).then((fetchedResponse) => {
+          // Add the network response to the cache for later visits
+          cache.put(event.request, fetchedResponse.clone());
+
+          // Return the network response
+          return fetchedResponse;
+        });
+      });
+    }));
+  } else {
+    return;
+  }
+});

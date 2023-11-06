@@ -1,10 +1,11 @@
 function tab(selection) {
+    document.getElementById('progress-bar').style.display = 'block';
     if(selection == 'home') {
         try{
             try {
-                document.getElementById('tabframe').src = '/home.html'
                 document.getElementById('stall').style.backdropFilter = 'blur(20px)'
                 document.getElementById('stall').style.webkitBackdropFilter = 'blur(20px)'
+                document.getElementById('tabframe').src = '/home.html'
             } catch {
                 console.log('Error 21')
                 return alert('Error 21')
@@ -17,9 +18,9 @@ function tab(selection) {
     if(selection == 'projects') {
         try{
             try {
-                document.getElementById('tabframe').src = '/projects.html'
                 document.getElementById('stall').style.backdropFilter = 'blur(20px)'
                 document.getElementById('stall').style.webkitBackdropFilter = 'blur(20px)'
+                document.getElementById('tabframe').src = '/projects.html'
             } catch {
                 console.log('Error 22')
                 return alert('Error 22')
@@ -32,9 +33,9 @@ function tab(selection) {
     if(selection == 'research') {
         try{
             try {
-                document.getElementById('tabframe').src = '/research.html'
                 document.getElementById('stall').style.backdropFilter = 'blur(20px)'
                 document.getElementById('stall').style.webkitBackdropFilter = 'blur(20px)'
+                document.getElementById('tabframe').src = '/research.html'
             } catch {
                 console.log('Error 22')
                 return alert('Error 22')
@@ -47,9 +48,9 @@ function tab(selection) {
     if(selection == 'bio') {
         try{
             try {
-                document.getElementById('tabframe').src = '/bio.html'
                 document.getElementById('stall').style.backdropFilter = 'blur(20px)'
                 document.getElementById('stall').style.webkitBackdropFilter = 'blur(20px)'
+                document.getElementById('tabframe').src = '/bio.html'
             } catch {
                 console.log('Error 23')
                 return alert('Error 23')
@@ -62,9 +63,9 @@ function tab(selection) {
     if(selection == 'contact') {
         try{
             try {
-                document.getElementById('tabframe').src = '/contactframe.html'
                 document.getElementById('stall').style.backdropFilter = 'blur(20px)'
                 document.getElementById('stall').style.webkitBackdropFilter = 'blur(20px)'
+                document.getElementById('tabframe').src = '/contactframe.html'
             } catch {
                 console.log('Error 24')
                 return alert('Error 24')
@@ -77,9 +78,9 @@ function tab(selection) {
     if(selection == 'tn') {
         try{
             try {
-                document.getElementById('tabframe').src = '/tt.html'
                 document.getElementById('stall').style.backdropFilter = 'blur(20px)'
                 document.getElementById('stall').style.webkitBackdropFilter = 'blur(20px)'
+                document.getElementById('tabframe').src = '/tt.html'
             } catch {
                 console.log(console.error())
                 return alert('Failed to open TN tab')
@@ -89,7 +90,6 @@ function tab(selection) {
             return alert('Error 5')
         }
     }
-    document.getElementById('progress-bar').style.display = 'block';
 }
 
 function radio() {
