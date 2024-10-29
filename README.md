@@ -1,3 +1,6 @@
+# Phasing Notification
+## Starting soon, this repo will be phased out in favor for [Nook Alley](https://github.com/bcat1023/Nook-Alley)
+
 # Welcome to thedrowsy.com
 ### A online portfolio 
 ##### Open soruce technology creates better software for everyone, better yet it's free. That's why this repo is open sourced 
