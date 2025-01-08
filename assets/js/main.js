@@ -407,3 +407,21 @@ function redirect(url, name) {
 	document.getElementById('redirect-name').innerHTML = 'You are leaving thedrowsy.com and going to ' + name;
 	console.log(url + name)
 }
+
+// Modal Popup Dismisal Code
+var dismissButton = document.getElementById("dismissButton")
+var spinner = document.getElementById('spinner')
+var openButton = document.getElementById("openButton")
+dismissButton.addEventListener("click", function (e) {
+	var modalPopup = document.getElementById("modalPopup")
+	modalPopup.style.transform = 'scaleY(0)'
+	modalPopup.style.overflow = 'hidden'
+	console.log("Ran")
+});
+
+openButton.addEventListener("click", function (e) {
+	spinner.style.display = 'block'
+	openButton.style.display = 'none';
+	dismissButton.style.display = 'none';
+	window.location = 'https://nookalley.com'
+});

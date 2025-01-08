@@ -1782,3 +1782,22 @@ body.is-preload #footer {
 .bold {
 	font-weight: bold;
 }
+
+.modalPopup {
+	background-image: url("/images/Pattern.gif");
+	background-color: black;
+    padding: 3em;
+    position: fixed;
+    z-index: 999;
+    margin: 10em;
+	box-shadow: 4px 7px 20px 0 #000000;
+	transition: 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
+}
+
+.modalPopup a {
+	background-color: transparent;
+}
+
+.modalPopup i {
+	display: none;
+}
